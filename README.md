@@ -1,6 +1,7 @@
 PSModuleTemplate
 ================
 
+<!-- To publish to PowerShell Gallery: dotnet build -t:PublishModule -c Release -->
 <!-- img src="PSModuleTemplate.svg" alt="PSModuleTemplate icon" align="right" / -->
 
 {{ Add description here }}
