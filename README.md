@@ -11,6 +11,8 @@ PSModuleTemplate
 
 {{ Add description here }}
 
+<!-- Consider using LICEcap (cinst licecap) to capture a GIF animation of a small PowerShell window showing your module in use. -->
+
 Cmdlets
 -------
 
