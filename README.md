@@ -16,13 +16,11 @@ PSModuleTemplate
 Cmdlets
 -------
 
-Documentation is automatically generated using [platyPS](https://github.com/PowerShell/platyPS).
+Documentation is automatically generated using [platyPS](https://github.com/PowerShell/platyPS) (`.\doc.cmd`).
 
 - [Get-Foo](docs/Get-Foo.md)
 
 Tests
 -----
 
-Tests are written for [Pester](https://github.com/Pester/Pester).
-
-To run the tests, run `dotnet build -t:pester`.
+Tests are written for [Pester](https://github.com/Pester/Pester) (`.\test.cmd`).

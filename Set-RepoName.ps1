@@ -9,7 +9,7 @@
 $NewName = (Split-Path (git remote get-url origin) -Leaf) -replace '\.git\z',''
 if($NewName -eq 'PSModuleTemplate')
 {
-    Stop-ThrowError.ps1 'Run this script once you have created a new repo from the template.' `
+    Stop-ThrowError.ps1 'Run this script once you have created a new repo from this template.' `
         -OperationContext (git remote get-url origin)
 }
 
@@ -22,5 +22,6 @@ Get-ChildItem -File -Recurse |
     Select-String -Pattern '\bPSModuleTemplate' -Replacement $NewName -List |
     Set-RegexReplace.ps1 -Replacement $NewName
 Get-ChildItem -File -Filter *.sln -Recurse |Add-Utf8Signature.ps1
+Remove-Item .\docs\Get-Foo.md -Force
 Pop-Location
 Remove-Item $PSCommandPath -Force
