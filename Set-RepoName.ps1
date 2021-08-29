@@ -23,3 +23,4 @@ Get-ChildItem -File -Recurse |
     Set-RegexReplace.ps1 -Replacement $NewName
 Get-ChildItem -File -Filter *.sln -Recurse |Add-Utf8Signature.ps1
 Pop-Location
+Remove-Item $PSCommandPath -Force
