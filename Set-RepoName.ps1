@@ -19,7 +19,7 @@ Get-ChildItem -Filter PSModuleTemplate* -Recurse |
     foreach {Rename-Item $_.FullName ($_.Name -replace '\APSModuleTemplate',$NewName)}
 Get-ChildItem -File -Recurse |
     where { $_.FullName -notmatch '\\bin\\|\\obj\\|\\\.git\\' } |
-    Select-String -Pattern '\bPSModuleTemplate' -Replacement $NewName -List |
+    Select-String -Pattern '\bPSModuleTemplate' -List |
     Set-RegexReplace.ps1 -Replacement $NewName
 Get-ChildItem -File -Filter *.sln -Recurse |Add-Utf8Signature.ps1
 Remove-Item .\docs\Get-Foo.md -Force
