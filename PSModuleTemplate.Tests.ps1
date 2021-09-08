@@ -29,5 +29,5 @@ Describe $module.Name {
             Get-Foo $Name |Should -BeExactly $Expected
         }
     }
-}
+}.GetNewClosure()
 $env:Path = $envPath
