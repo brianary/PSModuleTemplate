@@ -11,6 +11,9 @@ PSModuleTemplate
 
 {{ Add description here }}
 
+<!-- include installation instruction -->
+<!-- To install: `Install-Module PSModuleTemplate` -->
+
 <!-- Consider using LICEcap (cinst licecap) to capture a GIF animation of a small PowerShell window showing your module in use. -->
 
 Cmdlets
