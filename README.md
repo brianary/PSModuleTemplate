@@ -1,7 +1,7 @@
 PSModuleTemplate
 ================
 
-<!-- To publish to PowerShell Gallery: dotnet build -t:PublishModule -c Release -->
+<!-- To publish to PowerShell Gallery, commit an update to the .psd1 file -->
 <!-- img src="PSModuleTemplate.svg" alt="PSModuleTemplate icon" align="right" / -->
 
 <!-- Optional badges: -->
