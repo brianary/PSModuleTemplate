@@ -44,7 +44,7 @@
     <Exec Command='pwsh -noni -nop -c "cd ..\..; Invoke-Pester"'
         IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true" />
     <Exec Command='powershell -noni -nop -c "cd ..\..; Invoke-Pester"'
-        IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true" />
+        IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true" Condition=" '$(OS)' == 'Windows_NT' " />
   </Target>
 
   <ItemGroup>
