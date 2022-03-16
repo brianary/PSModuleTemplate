@@ -21,7 +21,7 @@ Get-ChildItem -File -Recurse |
     where { $_.FullName -notmatch '\\bin\\|\\obj\\|\\\.git\\' } |
     Select-String -Pattern '\bPSModuleTemplate' -List |
     Set-RegexReplace.ps1 -Replacement $NewName
-Get-ChildItem -File -Filter *.sln -Recurse |Add-Utf8Signature.ps1
+Get-ChildItem -File -Filter *.sln -Recurse |Add-Utf8Signature
 Remove-Item .\docs\Get-Foo.md -Force
 Pop-Location
 Remove-Item $PSCommandPath -Force
