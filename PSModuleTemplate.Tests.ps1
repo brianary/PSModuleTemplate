@@ -27,7 +27,7 @@ Describe $module.Name {
             @{ Name = 'Zaphod'; Expected = 'Zaphod' }
         ) {
             Param($Name,$Expected)
-            Get-Foo $Name |Should -BeExactly $Expected
+            PSModuleTemplate\Get-Foo $Name |Should -BeExactly $Expected
         }
     }
 }.GetNewClosure()
