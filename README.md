@@ -7,6 +7,7 @@ PSModuleTemplate
 <!-- Optional badges: -->
 <!-- [![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/PSModuleTemplate)](https://www.powershellgallery.com/packages/PSModuleTemplate/) -->
 <!-- [![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/PSModuleTemplate)](https://www.powershellgallery.com/packages/PSModuleTemplate/) -->
+<!-- [![PowerShell Gallery Platform](https://img.shields.io/powershellgallery/p/PSModuleTemplate)](https://www.powershellgallery.com/packages/PSModuleTemplate/) -->
 <!-- [![Actions Status](https://github.com/AuthorName/PSModuleTemplate/workflows/.NET%20Core/badge.svg)](https://github.com/AuthorName/PSModuleTemplate/actions) -->
 
 {{ Add description here }}

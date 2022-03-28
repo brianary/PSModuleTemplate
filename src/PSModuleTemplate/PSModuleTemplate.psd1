@@ -11,13 +11,23 @@ Copyright = '(c) AuthorName. All rights reserved.'
 Description = 'A description of this module template.'
 PowerShellVersion = '5.1'
 FunctionsToExport = @()
-CmdletsToExport = @('Get-Foo')
+CmdletsToExport = @(
+    'Get-Foo'
+)
 VariablesToExport = @()
 AliasesToExport = @()
-FileList = @('PSModuleTemplate.dll','PSModuleTemplate.dll-Help.xml')
+FileList = @(
+    'PSModuleTemplate.dll'
+    'PSModuleTemplate.dll-Help.xml'
+)
 PrivateData = @{
     PSData = @{
-        Tags = @('Foo')
+        Tags = @(
+            'Foo'
+            'Windows'
+            'Linux'
+            'macOS'
+        )
         # LicenseUri = ''
         # ProjectUri = ''
         # IconUri = ''
