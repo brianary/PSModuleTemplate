@@ -4,7 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PublishTrimmed>true</PublishTrimmed>
+    <PublishTrimmed>false</PublishTrimmed>
+    <PublishSingleFile>false</PublishSingleFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -41,9 +42,9 @@
   <Target Name="Pester" DependsOnTargets="Publish" Condition="'$(Configuration)' == 'Debug'">
     <Copy SourceFiles="$(OutputPath)\publish\FSharp.Core.dll"
         DestinationFolder="$(OutputPath)" />
-    <Exec Command='pwsh -noni -nop -c "cd ..\..; Invoke-Pester"'
+    <Exec Command='pwsh -noni -nop -c "cd ..\..; Invoke-Pester -Configuration @{TestResult=@{Enabled=!0}}"'
         IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true" />
-    <Exec Command='powershell -noni -nop -c "cd ..\..; Invoke-Pester"'
+    <Exec Command='powershell -noni -nop -c "cd ..\..; Invoke-Pester -Configuration @{TestResult=@{Enabled=!0}}"'
         IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true" Condition=" '$(OS)' == 'Windows_NT' " />
   </Target>
 
