@@ -1,6 +1,7 @@
 .*/
 !.github/
 !.template.config/
+!.vscode/
 bin/
 obj/
 packages/
